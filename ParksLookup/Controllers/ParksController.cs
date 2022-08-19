@@ -10,7 +10,7 @@ using ParksLookup.Models;
 namespace ParksLookup.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     public class ParksController : ControllerBase
     {
         private readonly ParksLookupContext _db;
