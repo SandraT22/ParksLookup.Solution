@@ -32,6 +32,7 @@
 * Swagger: "is a language-agnostic specification for describing REST APIs. It allows both computers and humans to understand the capabilities of a REST API without direct access to the source code."
 _Resource: https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-6.0&viewFallbackFrom=aspnetcore-50_
 * Swagger impplemented by running $ dotnet new webapi --framework net5.0 in the terminal. 
+* Swagger runs automatically after following the steps below (editing appsettings.json, running $ dotnet restore, and running $ dotnet run).
 
 ## Setup and Installation Requirements
 **This Setup assumes you have GitBash and MySQL Workbench pre-installed.   
