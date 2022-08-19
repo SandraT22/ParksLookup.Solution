@@ -117,8 +117,7 @@ This program was built using *`Microsoft .NET SDK 5.0.401`*, and may not be comp
 * Laptop is not connecting to mySQL server so I could not run migrations. 
 _Error Message: Host 'LAPTOP-LC6RHJ3C' is not allowed to connect to this MySQL server_
 * Last attempt to debug and run migrations brought up error: _Build failed. Use dotnet build to see the errors._
-* Last attempt to run $ dotnet build brought up error: _error MSB3027: Could not copy "C:\Users\Sandra\Desktop\ParksLookup.Solution\ParksLookup\obj\Debug\net5.0\apphost.exe" to "bin\Debug\net5.0\Parks
-Lookup.Solution.exe". Exceeded retry count of 10. Failed._
+* Last attempt to run $ dotnet build brought up error: _error MSB3027: Could not copy "C:\Users\Sandra\Desktop\ParksLookup.Solution\ParksLookup\obj\Debug\net5.0\apphost.exe" to "bin\Debug\net5.0\ParksLookup.Solution.exe". Exceeded retry count of 10. Failed._
 
 ## License
 MIT
