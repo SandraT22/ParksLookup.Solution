@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
+using ParksLookup.Models;
 
-namespace ParksLookup.Solution.Controllers
+namespace ParksLookup.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
@@ -22,7 +24,7 @@ namespace ParksLookup.Solution.Controllers
     [HttpGet]
     public async Task<List<Park>> Get(string name, string designation, string region, string state)
     {
-      IQueryable<Park> query = _db.Destinations.AsQueryable();
+      IQueryable<Park> query = _db.Parks.AsQueryable();
 
       if (name != null)
       {
@@ -41,7 +43,7 @@ namespace ParksLookup.Solution.Controllers
 
       if (state != null)
       {
-        query = query.Where(entry => entry.State >= state);
+        query = query.Where(entry => entry.State == state);
       }
 
       return await query.ToListAsync();
